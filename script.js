@@ -8,7 +8,7 @@ const getInsta=async ()=>{
      .then(res=>res.json())
      .catch(e=>console.log(e))
 
-     return data;
+     console.log(data);
 
   }catch(e){
      console.log(e.message);
@@ -16,5 +16,5 @@ const getInsta=async ()=>{
   
 }
 
-RESULT_DIV.innerHTML=await getInsta();
+getInsta();
 
