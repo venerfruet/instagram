@@ -11,7 +11,7 @@ const getInsta=async ()=>{
      .then(res=>res.json())
      .catch(e=>console.log(e))
 
-     return data.webpurl;
+     return data;
 
   }catch(e){
      console.log(e.message);
