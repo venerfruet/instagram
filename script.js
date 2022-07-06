@@ -1,9 +1,6 @@
 const BASE_URL='https://graph.instagram.com/9943873833?fields=id,media_type,media_url,username,timestamp&access_token=IGQVJVdEdrUzgxRE9OVHJTaFdTVXJYLWJsVUg3TW1LVzFIUjlyeUJta1lFdUU2VXd4cFBWZAXdENDdHM3hoUVlfTFBtb2JOYmdSZAnl3c1czZAUZA1SHhfNHlyUTBkeG1nQVh5aWhPbFpCalBRWDZAQb0oxWAZDZD';
 const RESULT_DIV=document.querySelector('#result');
 
-RESULT_DIV.innerHTML=await getInsta();
-
-
 const getInsta=async ()=>{
   try{
 
@@ -18,3 +15,6 @@ const getInsta=async ()=>{
   }
   
 }
+
+RESULT_DIV.innerHTML=await getInsta();
+
